@@ -1,0 +1,130 @@
+
+# coding: utf-8
+
+# Before you turn this problem in, make sure everything runs as expected. First, **restart the kernel** (in the menubar, select Kernel$\rightarrow$Restart) and then **run all cells** (in the menubar, select Cell$\rightarrow$Run All).
+# 
+# Make sure you fill in any place that says `YOUR CODE HERE` or "YOUR ANSWER HERE", as well as your name and collaborators below:
+
+# NAME = "Esmee Sevink, 1273206"
+# COLLABORATORS = "Laura Gullón Cachero, 2003043"
+
+# ---
+
+# Fill in the cell above to provide us with your name and student number, like
+# 
+# NAME = "Adam Smith, #student number#"
+# 
+# where you replace "#student number#" with your ... (very good!)
+# 
+# and if you are doing this with someone else (not more than one other person):
+# 
+# COLLABORATORS = "Karl Marx, #student number#"
+
+# # Assignment 2
+# 
+# 
+
+# This is the assignment for week 2; abbreviated to "Assignment 2". In other words, you did not miss assignment 1 (which does not exist).
+# 
+# All assignments, notebooks we discuss in class and the exam (final assignment) are in the same format. So we practice this format here.
+# 
+# In the first cell of the notebook, give us your name and student number in the way indicated above. If you do this notebook with --at max.-- one other student, give her/his name and student number as well under "COLLABORATORS".
+# 
+# Fill in the notebook (see below for code cells and text cells that you need to fill in).
+# 
+# If you look at the menus above (File, Edit, View etc.), there is one called "Cell". If you click on this, you can change the "Cell Type". Choose "Code" when you are typing python or R code. Choose "Markdown" when you are typing, well, markdown.
+# 
+# When you finish the notebook, make sure that you save it. Then put it on github, e.g. by dragging it onto github (see instructions below). 
+# 
+# Finally, add a link to your README file with the name of the assignment, for this week that is "Assignment 2".
+# 
+# 
+
+# ## Markdown
+
+# In the following cell type in markdown the text with a link and an image that you can find [here](http://janboone.github.io/programming-for-economists/_downloads/markdown_text_programming_for_economists.html).
+# 
+# Note that we are interested in seeing bold text, italics and math etc. Use your browser to find the image's address.
+# 
+# After you type your text, press SHIFT-ENTER and check whether the text looks the same as [here](http://janboone.github.io/programming-for-economists/_downloads/markdown_text_programming_for_economists.html).
+
+# # This is a section
+# 
+# ## this is a subsection
+# 
+# A bullet list looks _like this_:
+# 
+# * bullet 1
+# * bullet 2
+# * **bullet 3**
+# 
+# We can like to [this wonderful page](http://janboone.github.io/programming-for-economists/index.html).
+# 
+# And we can add a picture to the text as well.
+# 
+# ![image](http://images2.mtv.com/uri/mgid:file:docroot:mtv.com:/crop-images/2013/11/05/the_who_umg.jpg?enlarge=false&maxdimension=1300&matte=true&matteColor=black&quality=0.85)
+# 
+# Let's type some math: 
+# 
+# $$\sin(x)+\cos(x)=2$$
+# 
+#  
+# As a rule, I really like this line
+# 
+# ---
+# 
+# We are done.
+
+# ## Some python
+# 
+# Part of the "fun" of programming is that sometimes you want to do something that you have not seen before. Then you use "google". We will practice this by asking you to do things that you have not seen before, say on datacamp or previous classes. Do not panic and simply google what you need.
+# 
+# Then copy paste the solution that you find and adjust it to your needs.
+# 
+# Here we are going to use the plotting library `matplotlib`.
+
+# In[2]:
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+get_ipython().run_line_magic('matplotlib', 'inline')
+
+
+range_x = np.arange(-2,2.01,0.01)
+plt.plot(range_x,[x**2 for x in range_x])
+
+
+# --------
+# 
+# **Exercise**
+# 
+# Adjust the code above to:
+# 
+# * plot $1/x$ instead of $x^2$; note that this implies that you should adjust `range_x` as well; you can plot the function for $x>0$
+# * add a title to the graph, e.g. 'This is the function $1/x$'
+# * add labels on the horizontal and vertical axes with x and y in latex
+# 
+# Hint: google "matplotlib add title" etc.
+# 
+# ----------
+# 
+
+# In[11]:
+
+
+range_x = np.arange(0.01,2.01,0.01)
+plt.plot(range_x,[1/x for x in range_x])
+plt.title('This is the function $1/x$')
+plt.xlabel('$x$')
+plt.ylabel('$y$')
+
+
+# ## Github
+# 
+# After you have finished, we need to upload this notebook on github. Make sure that you upload the file on the github page of each group member.
+
+# Instructions on how to upload this on github can be found [on this page](http://janboone.github.io/programming-for-economists/github.html). This page has two screencasts: one shows how to drag the notebook onto your github page, the other shows how you can use the command line to upload your notebook.
+# 
+
+# Remember to update the README file in your repository to include a link to this notebook on github.
