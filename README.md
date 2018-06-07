@@ -5,4 +5,4 @@
 
 [Assignment 4](https://github.com/ESevink/assignments/blob/master/assignment4.ipynb)
 
-[Exam June 7, 2018] (https://github.com/ESevink/assignments/blob/master/exam_june_7_2018.ipynb)
+[Exam June 7, 2018](https://github.com/ESevink/assignments/blob/master/exam_june_7_2018.ipynb)
